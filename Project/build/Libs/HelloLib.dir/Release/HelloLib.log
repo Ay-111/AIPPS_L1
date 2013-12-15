@@ -1,0 +1,24 @@
+﻿Build started 15.12.2013 22:57:51.
+     1>Project "C:\Users\admin\Documents\GitHub\AIPPS_L1\Project\build\Libs\HelloLib.vcxproj" on node 2 (Build target(s)).
+     1>CustomBuild:
+         Building Custom Rule C:/Users/admin/Documents/GitHub/AIPPS_L1/Project/Libs/CMakeLists.txt
+         CMake does not need to re-run because C:\Users\admin\Documents\GitHub\AIPPS_L1\Project\build\Libs\CMakeFiles\generate.stamp is up-to-date.
+       ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\x86_amd64\CL.exe /c /IC:/Users/admin/Documents/GitHub/AIPPS_L1/Project/libs/ShapeLib /nologo /W3 /WX- /O2 /Ob2 /D WIN32 /D _WINDOWS /D NDEBUG /D "CMAKE_INTDIR=\"Release\"" /D _MBCS /Gm- /EHsc /MD /GS /fp:precise /Zc:wchar_t /Zc:forScope /GR /Fo"HelloLib.dir\Release\\" /Fd"C:/Users/admin/Documents/GitHub/AIPPS_L1/Project/build/Libs/Release/HelloLib.pdb" /Gd /TP /errorReport:prompt  -O4 ..\..\Libs\ShapeLib\_ColoredLine.cpp ..\..\Libs\ShapeLib\_coloredPoint.cpp ..\..\Libs\ShapeLib\_Line.cpp ..\..\Libs\ShapeLib\_Picture.cpp
+     1>cl : Command line warning D9002: ignoring unknown option '-O4'
+         _ColoredLine.cpp
+         _coloredPoint.cpp
+         _Line.cpp
+         _Picture.cpp
+         Generating Code...
+       Lib:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\x86_amd64\Lib.exe /OUT:"C:\Users\admin\Documents\GitHub\AIPPS_L1\Project\build\Libs\Release\HelloLib.lib" /NOLOGO /MACHINE:X64 HelloLib.dir\Release\_ColoredLine.obj
+         HelloLib.dir\Release\_coloredPoint.obj
+         HelloLib.dir\Release\_Line.obj
+         HelloLib.dir\Release\_Picture.obj
+         HelloLib.vcxproj -> C:\Users\admin\Documents\GitHub\AIPPS_L1\Project\build\Libs\Release\HelloLib.lib
+     1>Done Building Project "C:\Users\admin\Documents\GitHub\AIPPS_L1\Project\build\Libs\HelloLib.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:03.34
