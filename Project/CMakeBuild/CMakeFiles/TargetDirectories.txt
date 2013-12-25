@@ -1,0 +1,4 @@
+C:/Users/Fedoszone/Desktop/1234/AIPPS_L1/Project/CMakeBuild/CMakeFiles/ALL_BUILD.dir
+C:/Users/Fedoszone/Desktop/1234/AIPPS_L1/Project/CMakeBuild/Libs/CMakeFiles/HelloLib.dir
+C:/Users/Fedoszone/Desktop/1234/AIPPS_L1/Project/CMakeBuild/CMakeFiles/ZERO_CHECK.dir
+C:/Users/Fedoszone/Desktop/1234/AIPPS_L1/Project/CMakeBuild/CMakeFiles/test.dir

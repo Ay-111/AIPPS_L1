@@ -1,0 +1,149 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Itanium">
+      <Configuration>Debug</Configuration>
+      <Platform>Itanium</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Itanium">
+      <Configuration>Release</Configuration>
+      <Platform>Itanium</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGUID>{17B04097-10AF-4EDC-B4FE-836A704F78B9}</ProjectGUID>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>Itanium</Platform>
+    <ProjectName>HelloLib</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Itanium'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Itanium'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+    <PropertyGroup>
+      <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+      <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Itanium'">C:\Users\Fedoszone\Desktop\1234\AIPPS_L1\Project\CMakeBuild\Libs\Debug\</OutDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Itanium'">HelloLib.dir\Debug\</IntDir>
+      <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|Itanium'">HelloLib</TargetName>
+      <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|Itanium'">.lib</TargetExt>
+      <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Itanium'">C:\Users\Fedoszone\Desktop\1234\AIPPS_L1\Project\CMakeBuild\Libs\Release\</OutDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Itanium'">HelloLib.dir\Release\</IntDir>
+      <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|Itanium'">HelloLib</TargetName>
+      <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|Itanium'">.lib</TargetExt>
+    </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Itanium'">
+    <ClCompile>
+      <AdditionalOptions> -O4 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>C:/Users/Fedoszone/Desktop/1234/AIPPS_L1/Project/libs/ShapeLib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <DebugInformationFormat></DebugInformationFormat>
+      <PreprocessorDefinitions>CMAKE_INTDIR="Debug";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AssemblerListingLocation>Debug</AssemblerListingLocation>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ProgramDataBaseFileName>C:/Users/Fedoszone/Desktop/1234/AIPPS_L1/Project/CMakeBuild/Libs/Debug/HelloLib.pdb</ProgramDataBaseFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>CMAKE_INTDIR=\"Debug\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:/Users/Fedoszone/Desktop/1234/AIPPS_L1/Project/libs/ShapeLib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:/Users/Fedoszone/Desktop/1234/AIPPS_L1/Project/libs/ShapeLib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Itanium'">
+    <ClCompile>
+      <AdditionalOptions> -O4 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>C:/Users/Fedoszone/Desktop/1234/AIPPS_L1/Project/libs/ShapeLib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <DebugInformationFormat></DebugInformationFormat>
+      <PreprocessorDefinitions>CMAKE_INTDIR="Release";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AssemblerListingLocation>Release</AssemblerListingLocation>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ProgramDataBaseFileName>C:/Users/Fedoszone/Desktop/1234/AIPPS_L1/Project/CMakeBuild/Libs/Release/HelloLib.pdb</ProgramDataBaseFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>CMAKE_INTDIR=\"Release\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:/Users/Fedoszone/Desktop/1234/AIPPS_L1/Project/libs/ShapeLib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:/Users/Fedoszone/Desktop/1234/AIPPS_L1/Project/libs/ShapeLib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="..\..\Libs\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Itanium'">Building Custom Rule C:/Users/Fedoszone/Desktop/1234/AIPPS_L1/Project/Libs/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Itanium'">setlocal
+"C:\Program Files (x86)\CMake 2.8\bin\cmake.exe" -HC:/Users/Fedoszone/Desktop/1234/AIPPS_L1/Project -BC:/Users/Fedoszone/Desktop/1234/AIPPS_L1/Project/CMakeBuild --check-stamp-file C:\Users\Fedoszone\Desktop\1234\AIPPS_L1\Project\CMakeBuild\Libs\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Itanium'">C:/Users/Fedoszone/Desktop/1234/AIPPS_L1/Project/Libs/CMakeLists.txt;C:\Users\Fedoszone\Desktop\1234\AIPPS_L1\Project\Libs\CMakeLists.txt;C:\Users\Fedoszone\Desktop\1234\AIPPS_L1\Project\Libs\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Itanium'">C:\Users\Fedoszone\Desktop\1234\AIPPS_L1\Project\CMakeBuild\Libs\CMakeFiles\generate.stamp</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Itanium'">Building Custom Rule C:/Users/Fedoszone/Desktop/1234/AIPPS_L1/Project/Libs/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Itanium'">setlocal
+"C:\Program Files (x86)\CMake 2.8\bin\cmake.exe" -HC:/Users/Fedoszone/Desktop/1234/AIPPS_L1/Project -BC:/Users/Fedoszone/Desktop/1234/AIPPS_L1/Project/CMakeBuild --check-stamp-file C:\Users\Fedoszone\Desktop\1234\AIPPS_L1\Project\CMakeBuild\Libs\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Itanium'">C:/Users/Fedoszone/Desktop/1234/AIPPS_L1/Project/Libs/CMakeLists.txt;C:\Users\Fedoszone\Desktop\1234\AIPPS_L1\Project\Libs\CMakeLists.txt;C:\Users\Fedoszone\Desktop\1234\AIPPS_L1\Project\Libs\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Itanium'">C:\Users\Fedoszone\Desktop\1234\AIPPS_L1\Project\CMakeBuild\Libs\CMakeFiles\generate.stamp</Outputs>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\Libs\ShapeLib\Point.h" />
+    <ClInclude Include="..\..\Libs\ShapeLib\Picture.h" />
+    <ClInclude Include="..\..\Libs\ShapeLib\Line.h" />
+    <ClInclude Include="..\..\Libs\ShapeLib\ColoredLine.h" />
+    <ClInclude Include="..\..\Libs\ShapeLib\ColoredPoint.h" />
+    <ClCompile Include="..\..\Libs\ShapeLib\_ColoredLine.cpp"  />
+    <ClCompile Include="..\..\Libs\ShapeLib\_coloredPoint.cpp"  />
+    <ClCompile Include="..\..\Libs\ShapeLib\_Line.cpp"  />
+    <ClCompile Include="..\..\Libs\ShapeLib\_Picture.cpp"  />
+    <None Include="..\..\Libs\ShapeLib\DevIL.lib" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="C:/Users/Fedoszone/Desktop/1234/AIPPS_L1/Project/CMakeBuild/ZERO_CHECK.vcxproj">
+      <Project>802F96E5-A8F5-4786-84AB-EDE911F1427E</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

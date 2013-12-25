@@ -1,0 +1,50 @@
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ALL_BUILD", "ALL_BUILD.vcxproj", "{B385D438-348E-468C-BC6D-8C350442CC1C}"
+	ProjectSection(ProjectDependencies) = postProject
+		{17B04097-10AF-4EDC-B4FE-836A704F78B9} = {17B04097-10AF-4EDC-B4FE-836A704F78B9}
+		{802F96E5-A8F5-4786-84AB-EDE911F1427E} = {802F96E5-A8F5-4786-84AB-EDE911F1427E}
+		{40154B2B-624C-444A-812C-D2660DB1C346} = {40154B2B-624C-444A-812C-D2660DB1C346}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "HelloLib", "Libs\HelloLib.vcxproj", "{17B04097-10AF-4EDC-B4FE-836A704F78B9}"
+	ProjectSection(ProjectDependencies) = postProject
+		{802F96E5-A8F5-4786-84AB-EDE911F1427E} = {802F96E5-A8F5-4786-84AB-EDE911F1427E}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ZERO_CHECK", "ZERO_CHECK.vcxproj", "{802F96E5-A8F5-4786-84AB-EDE911F1427E}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "test", "test.vcxproj", "{40154B2B-624C-444A-812C-D2660DB1C346}"
+	ProjectSection(ProjectDependencies) = postProject
+		{17B04097-10AF-4EDC-B4FE-836A704F78B9} = {17B04097-10AF-4EDC-B4FE-836A704F78B9}
+		{802F96E5-A8F5-4786-84AB-EDE911F1427E} = {802F96E5-A8F5-4786-84AB-EDE911F1427E}
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Itanium = Debug|Itanium
+		Release|Itanium = Release|Itanium
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B385D438-348E-468C-BC6D-8C350442CC1C}.Debug|Itanium.ActiveCfg = Debug|Itanium
+		{B385D438-348E-468C-BC6D-8C350442CC1C}.Release|Itanium.ActiveCfg = Release|Itanium
+		{17B04097-10AF-4EDC-B4FE-836A704F78B9}.Debug|Itanium.ActiveCfg = Debug|Itanium
+		{17B04097-10AF-4EDC-B4FE-836A704F78B9}.Debug|Itanium.Build.0 = Debug|Itanium
+		{17B04097-10AF-4EDC-B4FE-836A704F78B9}.Release|Itanium.ActiveCfg = Release|Itanium
+		{17B04097-10AF-4EDC-B4FE-836A704F78B9}.Release|Itanium.Build.0 = Release|Itanium
+		{802F96E5-A8F5-4786-84AB-EDE911F1427E}.Debug|Itanium.ActiveCfg = Debug|Itanium
+		{802F96E5-A8F5-4786-84AB-EDE911F1427E}.Debug|Itanium.Build.0 = Debug|Itanium
+		{802F96E5-A8F5-4786-84AB-EDE911F1427E}.Release|Itanium.ActiveCfg = Release|Itanium
+		{802F96E5-A8F5-4786-84AB-EDE911F1427E}.Release|Itanium.Build.0 = Release|Itanium
+		{40154B2B-624C-444A-812C-D2660DB1C346}.Debug|Itanium.ActiveCfg = Debug|Itanium
+		{40154B2B-624C-444A-812C-D2660DB1C346}.Debug|Itanium.Build.0 = Debug|Itanium
+		{40154B2B-624C-444A-812C-D2660DB1C346}.Release|Itanium.ActiveCfg = Release|Itanium
+		{40154B2B-624C-444A-812C-D2660DB1C346}.Release|Itanium.Build.0 = Release|Itanium
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal
